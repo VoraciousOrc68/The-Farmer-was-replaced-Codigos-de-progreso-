@@ -1,0 +1,31 @@
+clear()
+x, y = get_pos_x(), get_pos_y()
+while True:
+	for i in range(get_world_size()+5):
+		if get_ground_type() == Grounds.Grassland:
+			till()
+			plant(Entities.Pumpkin)
+			move(North)
+			
+		elif get_ground_type() == Grounds.Soil:
+			plant(Entities.Pumpkin)
+			move(North)
+		
+		if can_harvest() and get_entity_type() == Entities.Pumpkin:
+			harvest()
+			plant(Entities.Pumpkin)
+			move(North)
+		elif not can_harvest() and get_entity_type() == Entities.Pumpkin:
+			plant(Entities.Pumpkin)
+			move(North)
+
+
+			if y == 0 and x in range(0, 6):
+				move(East)
+			else:
+				move(North)
+		if not can_harvest() and get_entity_type() == Entities.Pumpkin :
+				plant(Entities.Pumpkin)
+				move(North)
+					
+			
