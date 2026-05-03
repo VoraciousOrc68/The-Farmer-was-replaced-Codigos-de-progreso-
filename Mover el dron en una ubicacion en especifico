@@ -1,0 +1,4 @@
+x, y = get_pos_x(), get_pos_y()
+while True:	
+	if y == 5 and x in range(5 + 1):  # Rango de 0 a 5
+		move(East)
