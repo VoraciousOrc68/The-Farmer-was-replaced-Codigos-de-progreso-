@@ -1,0 +1,21 @@
+def nuevoCod():
+	clear()
+	x, y = get_pos_x(), get_pos_y()
+	
+	ObtPiso = get_ground_type()
+	ObtPlant = get_entity_type()
+	
+	ObtMap = get_world_size()
+	
+	tierra = Grounds.Soil
+	pasto = Grounds.Grassland
+	
+	heno = Entities.Grass
+	arbol = Entities.Tree
+	zanah = Entities.Carrot
+	calab = Entities.Pumpkin
+	
+	#while True:
+	print("Nuevo codigo con funcion")
+	return
+		
