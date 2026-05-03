@@ -1,0 +1,9 @@
+clear()
+while True:
+	move(North)
+	plant(Entities.Tree)
+	if can_harvest() and get_entity_type() == Entities.Tree:
+		harvest()
+		plant(Entities.Tree)
+	move(North)
+	
