@@ -1,0 +1,16 @@
+clear()
+while True:
+	for i in range(get_world_size() - 3):	
+		plant(Entities.Bush)
+		if can_harvest() and get_entity_type() == Entities.Bush:
+			harvest()
+			plant(Entities.Bush)
+			move(North)
+		else:
+			move(North)
+		if can_harvest() and get_entity_type() == Entities.Grass:
+			harvest()
+			plant(Entities.Grass)
+		move(North)
+	move(East)
+	move(North)		
